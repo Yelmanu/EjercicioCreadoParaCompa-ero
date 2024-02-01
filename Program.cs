@@ -10,6 +10,7 @@
             bool esEnteroTamaño = false;
             do
             {
+                //Controlamos que sea un entero para el tamaño
                 if(Int32.TryParse(Console.ReadLine(),out tamanyo))
                 {
 
@@ -22,7 +23,7 @@
                 }
             } while (!esEnteroTamaño);
 
-            // Inicializar el vector con valores aleatorios
+            // Inicializar el vector con valores introducidos
             int[] vector = new int[tamanyo];
 
             for (int i = 0; i < tamanyo; i++)
@@ -30,6 +31,7 @@
                 bool esEntero = false;
                 do
                 {
+                    //Controlamos que introduzca un numero entero
                     Console.WriteLine("Introduzca un valor: ");
                     if(Int32.TryParse(Console.ReadLine(), out vector[i]))
                     {
